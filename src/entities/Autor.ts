@@ -3,7 +3,7 @@ import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateCol
 @Entity('authors')
 class Autor {
    @PrimaryGeneratedColumn('increment')
-    id: string;
+    id: number;
 
     @Column('varchar',{ length: 255, nullable: false })
     name: string;
