@@ -10,7 +10,7 @@ autorRoutes.post("/", async (req: Request, res: Response) => {
     try {
         const { name, birthdate, biography, nationality, active } = req.body;
 
-        if (!name || !birthdate || !nationality || !nationality || active === undefined) {
+        if (!name || !birthdate || !biography || !nationality || active === undefined) {
             return res.status(400).json({ error: "Campos obrigatórios ausentes." });
         }
 
