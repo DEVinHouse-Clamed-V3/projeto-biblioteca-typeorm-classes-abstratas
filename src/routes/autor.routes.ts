@@ -35,7 +35,7 @@ autorRoutes.post("/", async (req: Request, res: Response) => {
 });
 
 // Buscar todos os autores
-autorRoutes.get("/", async (req, res) => {
+autorRoutes.get("/", async (req: Request, res: Response) => {
     try {
         const authorRepository = AppDataSource.getRepository(Author);
         const authors = await authorRepository.find();
@@ -47,7 +47,7 @@ autorRoutes.get("/", async (req, res) => {
 });
 
 // Buscar autor por ID
-autorRoutes.get("/:id", async (req, res) => {
+autorRoutes.get("/:id", async (req: Request, res: Response) => {
     try {
         const { id } = req.params;
         const authorRepository = AppDataSource.getRepository(Author);
@@ -65,7 +65,7 @@ autorRoutes.get("/:id", async (req, res) => {
 });
 
 // Atualizar autor
-autorRoutes.put("/:id", async (req, res) => {
+autorRoutes.put("/:id", async (req: Request, res: Response) => {
     try {
         const { id } = req.params;
         const { name, birthdate, biography, nationality, active } = req.body;
@@ -88,7 +88,7 @@ autorRoutes.put("/:id", async (req, res) => {
 });
 
 // Deletar autor
-autorRoutes.delete("/:id", async (req, res) => {
+autorRoutes.delete("/:id", async (req: Request, res: Response) => {
     try {
         const { id } = req.params;
         const authorRepository = AppDataSource.getRepository(Author);
