@@ -59,24 +59,3 @@ export class CreateTableAuthors1734511946652 implements MigrationInterface {
     }
 
 }
-
-/* Tarefas
-
-1 - Migration: Crie uma migration que criará a tabela authors no banco de dados com os seguintes campos:
-
-    id (inteiro, chave primária, autoincremento).
-
-    name (string, tipo varchar, not null, nome do autor).
-
-    birthdate (data, tipo date, data de nascimento do autor).
-
-    biography (texto, tipo text, biografia do autor).
-
-    nationality (string, tipo varchar, not null, nacionalidade do autor).
-
-    active (booleano, tipo boolean, indica se o autor está ativo ou não).
-
-    created_at (data e hora, tipo timestamp, data de criação do autor).
-
-    updated_at (data e hora, tipo timestamp, data da última atualização).
-    Utilize o comando do TypeORM para gerar a migration e realize as modificações necessárias para que todos os tipos de dados estejam corretamente definidos no PostgreSQL. */
