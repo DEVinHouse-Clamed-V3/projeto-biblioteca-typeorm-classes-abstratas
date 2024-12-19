@@ -9,7 +9,7 @@ import Autor from "../entities/Autor"
 export const AppDataSource = new DataSource({
     type: "postgres",
     host: "localhost",
-    port: 5432,
+    port: 3333,
     username: "postgres",
     password: "admin",
     database: "biblioteca",
